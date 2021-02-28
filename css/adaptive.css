@@ -34,10 +34,11 @@
         display: flex;
         margin-top: 10px;
         border: 0;
+        width: auto;
     }
     .avatar-lg
     {
-        width: 100%;
+        width:auto;
         height: 100px;
     }
     .avatar img
