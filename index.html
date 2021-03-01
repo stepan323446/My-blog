@@ -34,10 +34,10 @@
                 <nav id="nav">
                     <ul>
                         <li>
-                            <a href="#">Главная</a>
+                            <a class="active" href="#">Главная</a>
                         </li>
                         <li>
-                            <a href="#">Блог</a>
+                            <a href="blog.html">Блог</a>
                         </li>
                         <li>
                             <a href="#">Портфолио</a>
@@ -52,12 +52,19 @@
     </header>
     <!-- END HEADER -->
 
+    <style>
+        .title-page__inner button:hover
+        {
+            color: #fff;
+        }    
+    </style>
     <section class="start-page title-page">
             <div class="title-page__inner">
             <h1>
                 Добро пожаловать<br>
                 <span>на мою страницу</span>
             </h1>
+            <button style="margin-top: 30px;">Подписаться</button>
             </div>
     </section>
 

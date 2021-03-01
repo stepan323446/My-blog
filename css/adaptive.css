@@ -5,6 +5,20 @@
         width: 200px;
         height: 200px;
     }
+    /* BLOG */
+    .news-inner
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    #secondary
+    {
+        max-width: none;
+    }
+    .text-search
+    {
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 770px)
 {
@@ -155,4 +169,6 @@
     {
         left: 0;
     }
+
+    
 }

@@ -46,6 +46,30 @@ h2
     font-size: 40px;
     font-weight: 700;
 }
+button,
+a.btn
+{
+    font-size: 15px;
+    padding: 13px 55px;
+    border-radius: 10px;
+    border: 5px solid rgb(15, 37, 160);
+    background-color: rgb(15, 37, 160);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+button:hover,
+a.btn:hover
+{
+    color: #000;
+    background-color: transparent;
+}
+button:focus
+{
+    outline: none;
+}
+
 body::-webkit-scrollbar {
     width: 3px;
     background-color: #464646
@@ -88,6 +112,11 @@ body::-webkit-scrollbar {
     transition: ease 0.3s;
 }
 #nav > ul > li > a:hover
+{
+    font-size: 17px;
+    color: rgb(211, 255, 255);
+}
+#nav > ul > li > a.active
 {
     font-size: 17px;
     color: rgb(211, 255, 255);
@@ -159,6 +188,11 @@ header
     background-size: cover;
     margin: 0;
 }
+.common-page
+{
+    padding-top: 130px;
+    padding-bottom: 60px;
+}
 .title-page__inner
 {
     width: 100%;
@@ -166,6 +200,11 @@ header
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -387,4 +426,188 @@ footer
 .header__burger
 {
     display: none;
+}
+
+/* БЛОГ */
+#primary
+{
+    max-width: 710px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news-inner
+{
+    display: flex;
+}
+.post
+{
+    padding: 35px 40px 45px 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 70px;
+}
+.entry-header h2
+{
+    text-transform: uppercase;
+}
+.post-meta
+{
+    margin: 28px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.time
+{
+    font-weight: 700;
+}
+.categories
+{
+    color: #808080;
+    font-weight: 700;
+}
+.categories a
+{
+    color: #808080;
+}
+.categories a:hover
+{
+    color: rgb(93 93 194);
+}
+.post-thumb
+{
+    width: 100%;
+}
+.post-thumb img
+{
+    border-radius: 3px;
+}
+.post-content
+{
+    margin-top: 50px;
+    line-height: 35px;
+    font-family: Tahoma, Verdana, "Segoe", sans-serif;
+}
+
+
+#secondary
+{
+    padding: 40px;
+    max-width: 390px;
+    display: block;
+}
+.widget
+{
+    margin-bottom: 55px;
+    color: #646464;
+    line-height: 30px;
+    font-size: 16px;
+}
+.widget a
+{
+    color: #646464;
+}
+.widget a:hover
+{
+    color: rgb(93 93 194);
+}
+.widget h5
+{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #000;
+}
+.widget form
+{
+    display: flex;
+}
+input[type=text]
+{
+    border: 0;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    padding: 20px 10px;
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+input[type=text]
+{
+    outline: none;
+}
+.submit-search
+{
+    background-color: #2a3b5b;
+    border: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0;
+    width: 57px;
+}
+.submit-search:hover
+{
+    background-color: #3f557c;
+}
+.tagcloud a
+{
+    background-color: #ebebeb;
+    color: #646464;
+    border-radius: 4px;
+    padding: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.tagcloud a:hover
+{
+    background-color: rgb(93 93 194);;
+    color: #fff;
+}
+.pagination ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.pagination a
+{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+
+    border-radius: 5px;
+    border: 5px solid #2a3b5b;
+    transition: 0.3s;
+}
+.pagination a:hover
+{
+    background-color: #2a3b5b;
+    color: #fff;
+    border: 5px solid #2a3b5b;
+}
+.inactive
+{
+    color: #808080 !important;
+    border: 5px solid #5c5c5c !important;
+}
+.inactive
+{
+    background-color: transparent !important;
+    color: #808080 !important;
+}
+.pagination a.current
+{
+    background-color: #2a3b5b;
+    color: #fff;
+    border: 5px solid #2a3b5b;
 }
