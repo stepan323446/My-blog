@@ -8,8 +8,14 @@
     /* BLOG */
     .news-inner
     {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center;
     }
     #secondary
     {
@@ -171,4 +177,33 @@
     }
 
     
+}
+@media only screen and (max-width: 400px)
+{
+    /* BLOG */
+    #primary
+    {
+        padding: 0 !important;
+    }
+    #secondary
+    {
+        padding: 0 !important;
+    }
+    .entry-header h2
+    {
+        font-size: 20px;
+    }
+    .post-content
+    {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .post-meta
+    {
+        margin: 10px 0;
+    }
+    .post-content
+    {
+        margin-top: 10px;
+    }
 }
