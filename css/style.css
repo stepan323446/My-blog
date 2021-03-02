@@ -673,10 +673,6 @@ input[type=text]
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
-.portfolio-articles img
-{
-    max-width: 328px;
-}
 .port-block
 {
     max-width: 350px;
