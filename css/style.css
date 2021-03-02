@@ -46,6 +46,12 @@ h2
     font-size: 40px;
     font-weight: 700;
 }
+h3
+{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px;
+}
 button,
 a.btn
 {
@@ -566,7 +572,8 @@ input[type=text]
     background-color: #ebebeb;
     color: #646464;
     border-radius: 4px;
-    padding: 16px;
+    font-size: 14px;
+    padding: 10px 13px;
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
@@ -628,4 +635,68 @@ input[type=text]
     background-color: #2a3b5b;
     color: #fff;
     border: 5px solid #2a3b5b;
+}
+.portfolio-articles
+{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.work
+{
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+                -ms-grid-row-align: center !important;
+            align-items: center !important;
+    max-width: 378px;
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: auto !important;
+    padding: 42px 32px 60px 32px;
+    margin-bottom: 60px;
+}
+.work p
+{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #6b6b6b;
+}
+.post-content
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.portfolio-articles img
+{
+    max-width: 328px;
+}
+.port-block
+{
+    max-width: 350px;
+    margin-bottom: 70px;
+}
+.port-block h3
+{ margin-left: 0 !important; 
+    text-transform: uppercase;
+}
+.port-block p
+{ 
+    margin-left: 20px !important;
+    line-height: 30px; 
+}
+#left-portfolio
+{
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+}
+#right-portfolio
+{
+    max-width: 640px;
 }
