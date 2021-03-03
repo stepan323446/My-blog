@@ -733,6 +733,8 @@ input[type=text]
 }
 .friend p
 {
+    text-align: center;
+    line-height: 20px;
     font-size: 13px;
     margin: 0 !important;
 }
